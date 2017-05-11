@@ -1,4 +1,5 @@
-# [Now UI Kit](http://demos.creative-tim.com/material-kit-pro/index.html) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# [Now UI Kit](http://demos.creative-tim.com/material-kit-pro/index.html) 
+[![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
 ![alt text](https://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg?1466002372 "Now UI Kit")
 
@@ -87,3 +88,11 @@ Dribbble: <https://dribbble.com/creativetim>
 Google+: <https://plus.google.com/+CreativetimPage>
 
 Instagram: <https://instagram.com/creativetimofficial>
+
+
+https://img.shields.io/badge/version-1.0.0-blue.svg
+
+[CHANGELOG]: ./CHANGELOG.md
+[LICENSE]: ./LICENSE
+[version-badge]: https://img.shields.io/badge/version-1.0.0-blue.svg
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
