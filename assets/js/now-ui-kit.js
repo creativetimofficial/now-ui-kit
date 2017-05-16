@@ -1,12 +1,14 @@
 /*!
 
  =========================================================
- * Now-ui-kit - v1.0
+ * Now-ui-kit - v1.0.0
  =========================================================
 
- * Product Page: http://www.creative-tim.com/product/now-ui-kit
+ * Product Page: https://www.creative-tim.com/product/now-ui-kit
  * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/timcreative/now-ui-kit/blob/master/LICENSE.md)
+ * Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md)
+
+ * Designed by www.invisionapp.com Coded by www.creative-tim.com
 
  =========================================================
 
@@ -27,9 +29,6 @@ $(document).ready(function(){
     //  Activate the Tooltips
     $('[data-toggle="tooltip"], [rel="tooltip"]').tooltip();
 
-    // We put modals out of wrapper to working properly
-    $('.modal').appendTo("body");
-
     // Activate Popovers and set color for popovers
     $('[data-toggle="popover"]').each(function(){
         color_class = $(this).data('color');
@@ -42,9 +41,8 @@ $(document).ready(function(){
     scroll_distance = $navbar.attr('color-on-scroll') || 500;
 
     // Check if we have the class "navbar-color-on-scroll" then add the function to remove the class "navbar-transparent" so it will transform to a plain color.
-    if($('.navbar-color-on-scroll').length != 0){
-        console.log('checkfroc');
 
+    if($('.navbar[color-on-scroll]').length != 0){
         nowuiKit.checkScrollForTransparentNavbar();
         $(window).on('scroll', nowuiKit.checkScrollForTransparentNavbar)
     }
@@ -56,16 +54,14 @@ $(document).ready(function(){
     });
 
     // Activate bootstrapSwitch
-    $('input[name="checkbox"]').each(function(){
+    $('.bootstrap-switch').each(function(){
         $this = $(this);
-        data_on_label = $this.data('on-label');
-        data_off_label = $this.data('off-label');
-        input_color = $this.data('switch-color');
+        data_on_label = $this.data('on-label') || '';
+        data_off_label = $this.data('off-label') || '';
 
         $this.bootstrapSwitch({
-            onText: '' + data_on_label + '',
-            offText: '' + data_off_label + '',
-            onColor: '' + input_color + ''
+            onText: data_on_label,
+            offText: data_off_label
         });
     });
 
@@ -73,21 +69,25 @@ $(document).ready(function(){
         nowuiKit.initRightMenu();
     }
 
-    // Active Carousel
+    if ($(window).width() >= 992){
+        big_image = $('.page-header-image[data-parallax="true"]');
+
+        $(window).on('scroll', nowuiKitDemo.checkScrollForParallax);
+    }
+
+    // Activate Carousel
 	$('.carousel').carousel({
-        interval: 600000
+        interval: 4000
     });
 
-    $('.datetimepicker').each(function(){
+    $('.date-picker').each(function(){
         $(this).datepicker({
             templates:{
                 leftArrow: '<i class="now-ui-icons arrows-1_minimal-left"></i>',
                 rightArrow: '<i class="now-ui-icons arrows-1_minimal-right"></i>'
             }
         }).on('show', function() {
-                setTimeout(function(){
-                    $('.datepicker').addClass('open');
-                }, 400);
+                $('.datepicker').addClass('open');
 
                 datepicker_color = $(this).data('datepicker-color');
                 if( datepicker_color.length != 0){
@@ -99,130 +99,12 @@ $(document).ready(function(){
     });
 
 
-    $('.switch.switch-background input').on("switchChange.bootstrapSwitch",function(){
-        $input = $(this);
-
-        if($input.is(':checked')){
-            $('.section:not(.section-notifications):not(.section-tabs):not(.section-navbars)').each(function(){
-                $(this).fadeOut('fast',function(){
-                    $(this).attr('data-background-color','orange');
-                    $(this).fadeIn('fast');
-                });
-
-            });
-
-            $('button[data-toggle="popover"], button[data-toggle="tooltip"]').each(function(){
-                $(this).removeClass('btn-default');
-                $(this).addClass('btn-neutral');
-            });
-
-            $('.nav.nav-pills').each(function(){
-                $(this).addClass('nav-pills-neutral');
-            });
-
-            $('.pagination').each(function(){
-                $(this).addClass('pagination-neutral');
-            });
-
-            $('.progress-container').each(function(){
-                $(this).addClass('progress-neutral');
-
-                if($('.progress-container.progress-neutral').length != 0){
-                    $(this).removeClass('progress-primary');
-                }
-            });
-
-            $('.badge').each(function(){
-                $(this).addClass('badge-neutral');
-            });
-
-            $('.slider').each(function(){
-                $(this).addClass('slider-neutral');
-
-                if($('.slider.slider-neutral').length != 0){
-                    $(this).removeClass('slider-primary')
-                           .removeClass('slider-default');
-                }
-
-            });
-
-            $('.blockquote').each(function(){
-                $(this).addClass('blockquote-white');
-
-                if($('.blockuote.blockquote-white').length != 0){
-                    $(this).removeClass('blockquote-primary');
-                }
-            });
-
-            backgroundOrange = true;
-        } else {
-            $('.section:not(.section-notifications):not(.section-tabs)').each(function(){
-                $(this).fadeOut('fast',function(){
-                    $(this).removeAttr('data-background-color','orange');
-                    $(this).fadeIn('fast');
-                });
-            });
-
-            $('button[data-toggle="popover"], button[data-toggle="tooltip"]').each(function(){
-                $(this).removeClass('btn-neutral');
-                $(this).addClass('btn-default');
-            });
-
-            $('.nav.nav-pills').each(function(){
-                $(this).removeClass('nav-pills-neutral');
-            });
-
-            $('.pagination').each(function(){
-                $(this).removeClass('pagination-neutral');
-            });
-
-            $('.progress-container').each(function(){
-                $(this).removeClass('progress-neutral');
-
-                if($('.progress-container.progress-neutral').length == 0){
-                    $(this).addClass('progress-primary');
-                }
-            });
-
-            $('.badge').each(function(){
-                $(this).removeClass('badge-neutral');
-            });
-
-            $('.slider').each(function(){
-                $(this).removeClass('slider-neutral');
-
-                if($('.slider.slider-neutral').length == 0){
-                    $(this).addClass('slider-primary');
-                }
-            });
-
-            $('.blockquote').each(function(){
-                $(this).removeClass('blockquote-white');
-
-                if($('.blockuote.blockquote-white').length == 0){
-                    $(this).addClass('blockquote-primary');
-                }
-            });
-
-            backgroundOrange = false;
-        }
-    });
-
-
 });
 
 $(window).resize(function(){
-
     if( $(window).width() < 992 ){
         nowuiKit.initRightMenu();
     }
-
-    // if($(window).width() >= 768 && !burger_menu){
-    //     $('nav').removeClass('navbar-burger');
-    //     nowuiKit.misc.navbar_menu_visible = 0;
-    //     navbar_initialized = false;
-    //     $('html').removeClass('nav-open');
-    // }
 });
 
 nowuiKit = {
@@ -234,25 +116,15 @@ nowuiKit = {
             if($(document).scrollTop() > scroll_distance ) {
                 if(transparent) {
                     transparent = false;
-                    $('.navbar-color-on-scroll').removeClass('navbar-transparent');
+                    $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
                 }
             } else {
                 if( !transparent ) {
                     transparent = true;
-                    $('.navbar-color-on-scroll').addClass('navbar-transparent');
+                    $('.navbar[color-on-scroll]').addClass('navbar-transparent');
                 }
             }
     }, 17),
-
-    checkFullPageBackgroundImage: function(){
-        $page = $('.full-page');
-        image_src = $page.data('image');
-
-        if(image_src !== undefined){
-            image_container = '<div class="full-page-background" style="background-image: url(' + image_src + ') "/>'
-            $page.append(image_container);
-        }
-    },
 
     initRightMenu: function(){
         if(!toggle_initialized){
@@ -330,6 +202,7 @@ nowuiKit = {
 
 var big_image;
 
+// Javascript just for Demo purpose, remove it from your project
 nowuiKitDemo = {
     checkScrollForParallax: debounce(function(){
         var current_scroll = $(this).scrollTop();
@@ -345,6 +218,7 @@ nowuiKitDemo = {
     }, 6)
 
 }
+
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
