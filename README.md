@@ -42,7 +42,7 @@ Now Ui Kit
 │   │   ├── bootstrap.min.css
 │   │   ├── demo.css
 │   │   └── now-ui-kit.css
-│   ├── fonts-nucleo-icons
+│   ├── fonts
 │   ├── img
 │   ├── js
 │   │   ├── core
@@ -55,14 +55,14 @@ Now Ui Kit
 │   │       ├── bootstrap-switch.js
 │   │       └── nouislider.min.js
 ├── documentation
+│   ├── template.html
 │   └── tutorial-components.html
 ├── examples
 │   ├── landing-page.html
 │   ├── login-page.html
 │   └── profile-page.html
 ├── index.html
-├── nucleo-icons.html
-└── template.html
+└── nucleo-icons.html
 ```
 
 ## Useful Links
