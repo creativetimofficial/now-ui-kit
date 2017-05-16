@@ -53,7 +53,6 @@ Now Ui Kit
 │   │   └── plugins
 │   │       ├── bootstrap-datetimepicker.js
 │   │       ├── bootstrap-switch.js
-│   │       ├── moment.min.js
 │   │       └── nouislider.min.js
 ├── documentation
 │   └── tutorial-components.html
