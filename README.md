@@ -2,9 +2,10 @@
 
 ![alt text](https://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg?1466002372 "Now UI Kit")
 
-**[Now UI Kit](http://demos.creative-tim.com/material-kit-pro/index.html)** Now UI Kit is a responsive Bootstrap 4 kit provided for free by Invision and Creative Tim. It is a beautiful cross-platform UI kit featuring over 50 elements and 3 templates.
 
-Now UI is one of the most popular UI Kits online, provided in PSD and Sketch formats by Invision. We wanted to find a way for developers worldwide to benefit from using it. So, in collaboration with Invision, we are launching the HTML version for it!
+**[Now UI Kit](http://demos.creative-tim.com/now-ui-kit/index.html)** is a responsive Bootstrap 4 kit provided for free by Invision and Creative Tim. It is a beautiful cross-platform UI kit featuring over 50 elements and 3 templates.
+
+Now UI Kit is one of the most popular UI Kits online, provided in PSD and Sketch formats by Invision. We wanted to find a way for developers worldwide to benefit from using it. So, in collaboration with Invision, we are launching the HTML version for it!
 
 Now will help you create a clean and simple website that is a perfect fit for today's flat design. It is built using the 12 column grid system, with components designed to fit together perfectly. It makes use of bold colours, beautiful typography, clear photography and spacious arrangements.
 
