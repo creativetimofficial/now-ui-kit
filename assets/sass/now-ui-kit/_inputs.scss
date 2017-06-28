@@ -77,7 +77,7 @@
 .has-danger{
     &:after{
         font-family: 'Nucleo Outline';
-        content: "\ecf0";
+        content: "\ea22";
         display: inline-block;
         position: absolute;
         right: 35px;
@@ -96,7 +96,7 @@
 
 .has-danger{
     &:after{
-        content: "\ed2b";
+        content: "\ea53";
         color: $danger-color;
     }
 }

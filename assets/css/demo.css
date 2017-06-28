@@ -271,6 +271,12 @@
     }
 }
 
+@media screen and (max-width: 576px) {
+    #images img{
+        width: 40%;
+    }
+}
+
 /*       Loading dots  */
 
 /*      transitions */
