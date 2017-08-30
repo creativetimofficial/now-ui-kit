@@ -48,8 +48,8 @@ Now Ui Kit
 │   ├── js
 │   │   ├── core
 │   │   │   ├── bootstrap.min.js
-│   │   │   ├── jquery.3.1.1.min.js
-│   │   │   └── tether.min.js
+│   │   │   ├── jquery.3.2.1.min.js
+│   │   │   └── popper.min.js
 │   │   ├── now-ui-kit.js
 │   │   └── plugins
 │   │       ├── bootstrap-datetimepicker.js
@@ -90,5 +90,5 @@ Instagram: <https://instagram.com/creativetimofficial>
 
 [CHANGELOG]: ./CHANGELOG.md
 [LICENSE]: ./LICENSE
-[version-badge]: https://img.shields.io/badge/version-1.0.1-blue.svg
+[version-badge]: https://img.shields.io/badge/version-1.1.0-blue.svg
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
