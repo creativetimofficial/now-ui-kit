@@ -26,6 +26,7 @@ We wanted to fully display the power of this kit, so the kit comes packed with e
 + [Profile Page](http://demos.creative-tim.com/now-ui-kit/examples/profile-page.html)
 + [Login Page](http://demos.creative-tim.com/now-ui-kit/examples/login-page.html)
 + [Landing Page](http://demos.creative-tim.com/now-ui-kit/examples/landing-page.html)
++ [Now UI Kit PRO](http://demos.creative-tim.com/now-ui-kit-pro/presentation.html) (from $69)
 
 **Tutorial**
 In order for you to easily be able to use the Now UI kit, we have created a tutorial page. It shows the structure for the files inside the archive and how to import them. It then features every components with a description and example fr how to use it. You can see the details here (link).
