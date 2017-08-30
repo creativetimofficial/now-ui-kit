@@ -936,7 +936,6 @@
     font-weight: 300;
     font-size: 14px;
     border: none;
-    z-index: -1;
     position: relative;
     cursor: pointer;
 }
