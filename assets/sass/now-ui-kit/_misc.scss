@@ -12,6 +12,7 @@ body{
 }
 /* Animations */
 .nav-pills .nav-link,
+.nav-item .nav-link,
 .navbar,
 .nav-tabs .nav-link{
     @include transition($general-transition-time, $transition-ease);

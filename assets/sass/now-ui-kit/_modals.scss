@@ -85,7 +85,7 @@
             background-color: $white-color;
             border-radius: 50%;
             text-align: center;
-            line-height: 5.7;
+            line-height: 5.9;
             box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.3);
 
             i{
@@ -155,7 +155,7 @@
         @include modal-colors($info-color, $white-color);
     }
 
-    &.show .modal-dialog{
+    &.show.modal-mini .modal-dialog{
         -webkit-transform: translate(0,30%);
         -o-transform: translate(0,30%);
         transform: translate(0,30%);

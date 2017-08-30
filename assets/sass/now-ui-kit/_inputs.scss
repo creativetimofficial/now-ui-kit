@@ -5,7 +5,7 @@
     border: 1px solid $light-gray;
     border-radius: $btn-round-radius;
     color: $black-color;
-    line-height: 1em;
+    line-height: normal;
     font-size: $font-size-small;
     @include transition-input-focus-color();
     @include box-shadow(none);
@@ -35,6 +35,11 @@
         @include box-shadow(none);
     }
 
+    .has-success &:focus{
+        border-color: lighten($success-color, 5%);
+    }
+
+
     .has-danger &,
     .has-success &{
         &.form-control-success,
@@ -44,22 +49,22 @@
     }
 
     .has-danger &{
-        background-color: lighten($danger-color, 30%);
         border-color: lighten($danger-color, 30%);
         color: $danger-color;
+        background-color: rgba(222,222,222, .1);
 
         &:focus{
-            background-color: $opacity-gray-3;
+            background-color: $white-color;
         }
     }
 
     & + .form-control-feedback{
         border-radius: $border-radius-large;
         font-size: $font-size-base;
-        margin-top: -7px;
+        margin-top: 0;
         position: absolute;
-        right: 10px;
-        top: 50%;
+        left: 18px;
+        bottom: -20px;
         vertical-align: middle;
     }
 
@@ -80,8 +85,8 @@
         content: "\ea22";
         display: inline-block;
         position: absolute;
-        right: 35px;
-        top: 12px;
+        right: 15px;
+        bottom: 10px;
         color: $success-color;
         font-size: 11px;
     }
@@ -168,6 +173,10 @@
         @include input-size($padding-base-vertical - 1, $padding-base-horizontal);
         padding-left: 18px;
     }
+
+    i{
+        width: 17px;
+    }
 }
 
 .input-group-focus{
@@ -245,4 +254,11 @@ textarea.form-control{
     &.form-group.form-group-no-border .form-control{
         padding-right: $padding-input-horizontal + 21;
     }
+}
+
+.form-group{
+    position:relative;
+}
+.form-group.has-error, .form-group.has-danger{
+    margin-bottom: 20px;
 }

@@ -9,6 +9,10 @@ h1,h2,h3,h4,h5,h6{
     font-weight: $font-weight-normal;
 }
 
+small{
+    font-size: 60%;
+}
+
 a{
     color: $primary-color;
     &:hover,
@@ -60,6 +64,7 @@ h6, .h6{
 p{
     line-height: 1.61em;
 
+    .description &,
     &.description{
         font-size: 1.14em;
     }
@@ -106,6 +111,9 @@ p{
 }
 .text-danger {
   color: $brand-danger !important;
+}
+.text-black{
+  color: $light-black;
 }
 
 .blockquote{
