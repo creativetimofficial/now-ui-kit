@@ -1,25 +1,29 @@
 @mixin popover-color($color, $text-color) {
     background-color: $color;
-    color: $text-color;
 
-
-    &.bs-tether-element-attached-right:after{
-        border-left-color:$color;
+    .popover-body{
+        color: $text-color;
     }
 
-    &.bs-tether-element-attached-top:after{
-        border-bottom-color:$color;
-    }
 
-    &.bs-tether-element-attached-bottom:after{
-        border-top-color:$color;
-    }
-
-    &.bs-tether-element-attached-left:after{
+    &.bs-popover-right .arrow:after{
         border-right-color:$color;
     }
 
-    .popover-title{
+    &.bs-popover-top .arrow:after{
+        border-top-color:$color;
+    }
+
+    &.bs-popover-bottom .arrow:after{
+        border-bottom-color:$color;
+    }
+
+    &.bs-popover-left .arrow:after{
+        border-left-color:$color;
+    }
+
+    .popover-header{
         color: $text-color;
+        opacity: .6;
     }
 }

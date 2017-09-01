@@ -5,6 +5,7 @@
     color: $white-color;
     padding-top: .9rem;
     padding-bottom: .9rem;
+    position: relative;
 
     &.alert-success{
         background-color: $success-color-alert;

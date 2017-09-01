@@ -13,6 +13,7 @@ $white-bg:                   #FFFFFF !default;
 $orange-bg:                  #e95e38 !default;
 
 $smoke-bg:                   #F5F5F5 !default;
+$light-black:                #444    !default;
 
 $black-bg:                   rgba(30,30,30,.97) !default;
 
@@ -25,6 +26,8 @@ $dark-gray:                  #9A9A9A !default;
 
 $opacity-gray-3:             rgba(222,222,222, .3) !default;
 $opacity-gray-5:             rgba(222,222,222, .5) !default;
+$opacity-gray-8:             rgba(222,222,222, .8) !default;
+
 
 $opacity-5:                  rgba(255,255,255, .5) !default;
 $opacity-8:                  rgba(255,255,255, .8) !default;
@@ -39,32 +42,32 @@ $opacity-2:                  rgba(255,255,255, .2) !default;
 $transparent-bg:             transparent !default;
 $dark-background:            #555555 !default;
 
-$default-color:              #B8B8B8 !default;
-$default-states-color:       darken($default-color, 5%) !default;
+$default-color:              #888 !default;
+$default-states-color:       lighten($default-color, 6%) !default;
 $default-color-opacity:      rgba(182, 182, 182, .6) !default;
 
 $primary-color:              #f96332 !default;
-$primary-states-color:       darken($primary-color, 5%) !default;
+$primary-states-color:       lighten($primary-color, 6%) !default;
 $primary-color-opacity:      rgba(249, 99, 50, .3) !default;
 $primary-color-alert:        rgba(249, 99, 50, .8) !default;
 
 $success-color:              #18ce0f !default;
-$success-states-color:       darken($success-color, 5%) !default;
+$success-states-color:       lighten($success-color, 6%) !default;
 $success-color-opacity:      rgba(24, 206, 15, .3) !default;
 $success-color-alert:        rgba(24, 206, 15, .8) !default;
 
 $info-color:                 #2CA8FF !default;
-$info-states-color:          #109CFF !default;
+$info-states-color:          lighten($info-color, 6%) !default;
 $info-color-opacity:         rgba(44, 168, 255, .3) !default;
 $info-color-alert:           rgba(44, 168, 255, .8) !default;
 
 $warning-color:              #FFB236 !default;
-$warning-states-color:       darken($warning-color, 5%) !default;
+$warning-states-color:       lighten($warning-color, 6%) !default;
 $warning-color-opacity:      rgba(255, 178, 54, .3) !default;
 $warning-color-alert:        rgba(255, 178, 54, .8) !default;
 
 $danger-color:               #FF3636 !default;
-$danger-states-color:        darken($danger-color, 5%) !default;
+$danger-states-color:        lighten($danger-color, 6%) !default;
 $danger-color-opacity:       rgba(255, 54, 54, .3) !default;
 $danger-color-alert:         rgba(255, 54, 54, .8) !default;
 
@@ -133,10 +136,13 @@ $btn-round-radius:             30px         !default;
 
 $height-base:                  55px         !default;
 
-$btn-icon-font-size:            24px        !default;
-$btn-icon-size:                 56px        !default;
-$btn-icon-size-mini:            36px        !default;
-$btn-icon-font-size-mini:       14px        !default;
+$btn-icon-size:                 3.5rem       !default;
+$btn-icon-size-regular:         2.375rem      !default;
+$btn-icon-font-size-regular:    0.9375rem     !default;
+$btn-icon-font-size-small:      0.6875rem      !default;
+$btn-icon-size-small:           1.875rem     !default;
+$btn-icon-font-size-lg:         1.325rem     !default;
+$btn-icon-size-lg:              3.6rem         !default;
 
 $font-size-h1:                 3.5em        !default; // ~ 49px
 $font-size-h2:                 2.5em        !default; // ~ 35px

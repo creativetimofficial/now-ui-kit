@@ -10,11 +10,16 @@
     &:active:hover,
     &.active:focus,
     &.active:hover,
-    .open > &.dropdown-toggle,
-    .open > &.dropdown-toggle:focus,
-    .open > &.dropdown-toggle:hover {
+    .show > &.dropdown-toggle,
+    .show > &.dropdown-toggle:focus,
+    .show > &.dropdown-toggle:hover {
         background-color: $btn-states-color;
         color: $white-color;
+        box-shadow: none;
+    }
+
+    &:hover{
+        box-shadow:  0 3px 8px 0 rgba(0,0,0, 0.17);
     }
 
     &.disabled,
@@ -30,11 +35,6 @@
             background-color: $btn-color;
             border-color: $btn-color;
         }
-    }
-
-    &.focus,
-    &:focus{
-        box-shadow: none;
     }
 
     // btn-neutral style
@@ -92,21 +92,27 @@
         }
 
         &.active,
+        &:active,
         &:active:focus,
         &:active:hover,
         &.active:focus,
         &.active:hover,
-        .open > &.dropdown-toggle,
-        .open > &.dropdown-toggle:focus,
-        .open > &.dropdown-toggle:hover {
+        .show > &.dropdown-toggle,
+        .show > &.dropdown-toggle:focus,
+        .show > &.dropdown-toggle:hover {
             background-color: $white-color;
-            color: $primary-color;
+            color: $primary-states-color;
+            box-shadow: none;
         }
 
         &:hover,
-        &:focus,
-        &:active{
+        &:focus{
             color: $primary-states-color;
+
+            &:not(.nav-link){
+                box-shadow: none;
+            }
+
         }
 
     } @else {
@@ -123,6 +129,7 @@
             background-color: $transparent-bg;
             color: $btn-states-color;
             border-color: $btn-states-color;
+            box-shadow: none;
         }
     }
 
@@ -135,6 +142,7 @@
             background-color: $transparent-bg;
             color: $btn-states-color;
             text-decoration: none;
+            box-shadow: none;
         }
     }
 }

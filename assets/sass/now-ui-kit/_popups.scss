@@ -5,10 +5,20 @@
     line-height: 1.7;
     max-width: 240px;
 
-    .popover-title{
+    &.bs-popover-top .arrow:before,
+    &.bs-popover-left .arrow:before,
+    &.bs-popover-right .arrow:before,
+    &.bs-popover-bottom .arrow:before,{
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    .popover-header{
         color: $default-color-opacity;
         font-size: $font-size-base;
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-weight: $font-weight-semi;
         margin: 0;
         margin-top: 5px;
@@ -48,20 +58,20 @@
 
 
 .tooltip{
-    &.bs-tether-element-attached-right .tooltip-inner:before{
-        border-left-color:$white-color;
+    &.bs-tooltip-right .arrow:before{
+        border-right-color:$white-color;
     }
 
-    &.bs-tether-element-attached-top .tooltip-inner:before{
-        border-bottom-color:$white-color;
-    }
-
-    &.bs-tether-element-attached-bottom .tooltip-inner:before{
+    &.bs-tooltip-top .arrow:before{
         border-top-color:$white-color;
     }
 
-    &.bs-tether-element-attached-left .tooltip-inner:before{
-        border-right-color:$white-color;
+    &.bs-tooltip-bottom .arrow:before{
+        border-bottom-color:$white-color;
+    }
+
+    &.bs-tooltip-left .arrow:before{
+        border-left-color:$white-color;
     }
 }
 

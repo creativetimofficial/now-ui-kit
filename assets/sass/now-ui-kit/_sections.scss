@@ -46,6 +46,7 @@
         height: 100%;
         z-index: 1;
         text-align: center;
+        position: relative;
 
         > .content-center{
             position: absolute;
@@ -57,6 +58,7 @@
             transform: translate(-50%,-50%);
 
             text-align: center;
+            padding: 0 15px;
             color: #FFFFFF;
             width: 100%;
             max-width: 880px;
@@ -111,29 +113,25 @@
     .image-container{
         height: 335px;
         position: relative;
+        background-position: center center;
+        background-size: cover;
+        box-shadow: $box-shadow-raised;
+        border-radius: .25rem;
+
+        & + .category{
+            padding-top: 15px;
+        }
 
         &.image-right{
+            z-index: 2;
+
             + h3.title{
                 margin-top: 120px;
-            }
-
-            img{
-                z-index: 2;
             }
         }
 
         &.image-left{
-            img{
-                z-index: 1;
-            }
-        }
-
-        img{
-            width: 100%;
-            left: 0;
-            top: 0;
-            height: auto;
-            position: absolute;
+            z-index: 1;
         }
 
         &:nth-child(2){
@@ -147,7 +145,7 @@
         min-height: 180px;
         text-align: left;
         position: absolute;
-        top: 365px;
+        top: 376px;
         right: 155px;
         z-index: 0;
     }
@@ -308,14 +306,28 @@
     .title,
     .social-description h2,
     p,
-    h1,h2,h3,h4,h5,h6,a:not(.btn),
+    p.blockquote,
+    p.blockquote small,
+    h1,h2,h3,h4,h5,h6,a:not(.btn):not(.dropdown-item),
     .icons-container i{
         color: $white-color;
+    }
+
+    .separator{
+        background-color: $white-color;
+    }
+
+    .navbar.bg-white p{
+        color: $default-color;
     }
 
     .description,
     .social-description p{
         color: $opacity-8;
+    }
+
+    p.blockquote{
+        border-color: $opacity-2;
     }
 
     //radio and checkboxes

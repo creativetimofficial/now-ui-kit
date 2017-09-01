@@ -6,8 +6,11 @@
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
 
     a{
-        color: $white-color;
         vertical-align: middle;
+
+        &:not(.btn):not(.dropdown-item){
+            color: $white-color;
+        }
     }
 
     p{
@@ -26,7 +29,19 @@
             top: -4px;
         }
 
-        .nav-link{
+        .nav-link.btn{
+            padding: $padding-btn-vertical $padding-btn-horizontal;
+
+            &.btn-lg{
+                padding: $padding-large-vertical $padding-large-horizontal;
+            }
+
+            &.btn-sm{
+                padding: $padding-small-vertical $padding-small-horizontal;
+            }
+        }
+
+        .nav-link:not(.btn){
             text-transform: uppercase;
             font-size: $font-size-mini;
             padding: $padding-base-vertical $padding-base-horizontal;
@@ -64,15 +79,13 @@
             }
         }
 
-        .nav-item.active .nav-link{
+        .nav-item.active .nav-link:not(.btn),
+        .nav-item .nav-link:not(.btn):focus,
+        .nav-item .nav-link:not(.btn):hover,
+        .nav-item .nav-link:not(.btn):active{
             background-color: $opacity-2;
             border-radius: $border-radius-small;
         }
-    }
-
-    &[class*='navbar-toggleable-'] .container{
-        padding-left: 15px;
-        padding-right: 15px;
     }
 
     .logo-container{
@@ -95,7 +108,6 @@
     .navbar-toggler{
         width: 37px;
         height: 27px;
-        vertical-align: middle;
         outline: 0;
         cursor: pointer;
 
@@ -103,11 +115,6 @@
             position: relative;
             left: 0;
             padding-left: 0;
-        }
-
-        &.navbar-toggler-right{
-            padding-right: 0;
-            top: 8px;
         }
 
         &:hover{
@@ -144,7 +151,10 @@
             background: $default-color;
         }
 
-        .nav-item.active .nav-link{
+        .nav-item.active .nav-link:not(.btn),
+        .nav-item .nav-link:not(.btn):focus,
+        .nav-item .nav-link:not(.btn):hover,
+        .nav-item .nav-link:not(.btn):active{
             background-color: $opacity-gray-3;
         }
 
