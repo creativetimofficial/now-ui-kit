@@ -1,0 +1,33 @@
+{
+  "name": "now-ui-kit",
+  "version": "1.1.0",
+  "description": "Now UI Kit Bootstrap 4 - Designed by Invision. Coded by Creative Tim",
+  "main": "index.js",
+  "directories": {
+    "example": "root"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/now-ui-kit.git"
+  },
+  "keywords": [
+    "bootstrap4",
+    "kit",
+    "invision",
+    "uikit",
+    "ui-kit",
+    "bootstrap-4",
+    "bootstrap-theme",
+    "freebie",
+    "sass-framework"
+  ],
+  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/now-ui-kit/issues"
+  },
+  "homepage": "https://github.com/creativetimofficial/now-ui-kit#readme"
+}
