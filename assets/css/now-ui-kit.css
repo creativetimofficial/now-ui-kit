@@ -2041,6 +2041,7 @@ fieldset[disabled] .btn-neutral:active,
 fieldset[disabled] .btn-neutral.active {
     background-color: #FFFFFF;
     border-color: #FFFFFF;
+    color: #000000;
 }
 
 .btn-neutral.btn-danger {
@@ -4276,7 +4277,7 @@ Created using IcoMoon - icomoon.io
 
 
 /*------------------------
-	base class definition
+  base class definition
 -------------------------*/
 
 .now-ui-icons {
@@ -4390,7 +4391,7 @@ Created using IcoMoon - icomoon.io
 
 
 /*------------------------
-	font icons
+  font icons
 -------------------------*/
 
 .now-ui-icons.ui-1_check:before {
