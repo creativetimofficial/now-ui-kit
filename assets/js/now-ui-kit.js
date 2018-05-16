@@ -392,7 +392,7 @@ nowuiKit = {
     },
 
     checkScrollForTransparentNavbar: debounce(function() {
-        if ($(document).scrollTop() > scroll_distance) {
+        if ($(document).scrollTop() >= scroll_distance) {
             if (transparent) {
                 transparent = false;
                 $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
