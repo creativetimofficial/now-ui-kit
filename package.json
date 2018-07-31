@@ -1,0 +1,17 @@
+{
+  "name": "now-ui-kit",
+  "description": "Bootstrap 4 Now UI Design",
+  "version": "1.0.1",
+  "homepage": "http://creative-tim.com/product/now-ui-kit",
+  "author": "Creative Tim",
+  "license": "Creative Tim License <www.creative-tim.com/license>",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-open": "^3.0.1"
+  }
+}

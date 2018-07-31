@@ -1,0 +1,10 @@
+@mixin badge-color($color) {
+
+    &,
+    &[href]:focus,
+    &[href]:hover{
+      border-color: $color;
+      background-color: $color;
+      color: $white-color;
+    }
+}
