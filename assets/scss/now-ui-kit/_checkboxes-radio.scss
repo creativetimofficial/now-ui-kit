@@ -65,7 +65,7 @@
   position: absolute;
   visibility: hidden;
 }
-.form-check input[type="checkbox"]:checked + .form-check-sign::after{
+.form-check input[type="checkbox"]:checked ~ .form-check-sign::after{
   opacity: 1;
 }
 
