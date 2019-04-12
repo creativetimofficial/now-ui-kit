@@ -35,7 +35,7 @@
         position: relative;
         line-height: normal;
 
-        &.btn-simple{
+        &[class*="btn-outline-"]{
             padding: 0;
         }
 
@@ -88,23 +88,29 @@
 .btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
 .btn-neutral { @include btn-styles($white-color, $white-color); }
 
+.btn-outline-primary { @include outline-buttons($primary-color, $primary-states-color); }
+.btn-outline-success { @include outline-buttons($success-color, $success-states-color); }
+.btn-outline-info    { @include outline-buttons($info-color, $info-states-color); }
+.btn-outline-warning { @include outline-buttons($warning-color, $warning-states-color); }
+.btn-outline-danger  { @include outline-buttons($danger-color, $danger-states-color); }
+.btn-outline-default { @include outline-buttons($default-color, $default-states-color); }
+
 .btn-round{
     border-width: $border-thin;
     border-radius: $btn-round-radius !important;
     padding: $padding-btn-vertical  $padding-round-horizontal;
 
-    &.btn-simple{
+    &[class*="btn-outline-"]{
         padding: $padding-btn-vertical - 1  $padding-round-horizontal - 1;
     }
 }
-.btn-simple{
+[class*="btn-outline-"]{
     border: $border;
-    border-color: $default-color;
     padding: $padding-btn-vertical - 1 $padding-round-horizontal - 1;
     background-color: $transparent-bg;
 }
 
-.btn-simple,
+[class*="btn-outline-"],
 .btn-link{
     &.disabled,
     &:disabled,

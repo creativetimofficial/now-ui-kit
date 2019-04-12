@@ -5,6 +5,7 @@
     border: 1px solid $light-gray;
     border-radius: $btn-round-radius;
     color: $black-color;
+    height: auto;
     line-height: normal;
     font-size: $font-size-small;
     @include transition-input-focus-color();
@@ -233,13 +234,13 @@
   }
 }
 
-.input-group .form-control:first-of-type,
+.input-group .form-control:first-child,
 .input-group-text:first-child,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
     border-right: 0 none;
 }
-.input-group .form-control:last-of-type,
+.input-group .form-control:last-child,
 .input-group-text:last-child,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child) {

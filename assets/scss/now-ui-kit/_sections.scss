@@ -374,7 +374,7 @@
     @include input-coloured-bg($opacity-5, $white-color, $white-color, $transparent-bg, $opacity-1, $opacity-2);
 
     //buttons
-    .btn.btn-simple{
+    .btn[class*="btn-outline-"] {
         background-color: $transparent-bg;
         border-color: $opacity-5;
         color: $white-color;

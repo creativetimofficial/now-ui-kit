@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.3.0] 2019-04-12
+### Bugfixing & Bootstrap 4.3.1 integration
+- Bootstrap Switch library updated
+- NoUiSlider library updated
+
 ## [1.2.0] 2018-07-31
 ### Bugfixing & Bootstrap 4.1.1 integration
 - Added section `How to enable Burger Menu` in Docs

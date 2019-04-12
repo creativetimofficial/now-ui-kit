@@ -34,6 +34,7 @@
       padding-bottom: .6rem;
       margin-top: 5px;
       @include transition($fast-transition-time, $transition-linear);
+      outline: none;
 
       &:hover,
       &:focus{

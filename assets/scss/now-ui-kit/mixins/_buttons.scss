@@ -50,7 +50,7 @@
             &:hover,
             &:focus,
             &:active{
-                color: $danger-states-color;
+                color: $danger-states-color !important;
             }
         }
 
@@ -60,7 +60,7 @@
             &:hover,
             &:focus,
             &:active{
-                color: $primary-states-color;
+                color: $primary-states-color !important;
             }
         }
 
@@ -70,7 +70,7 @@
             &:hover,
             &:focus,
             &:active{
-                color: $info-states-color;
+                color: $info-states-color !important;
             }
         }
 
@@ -80,7 +80,7 @@
             &:hover,
             &:focus,
             &:active{
-                color: $warning-states-color;
+                color: $warning-states-color !important;
             }
         }
 
@@ -90,7 +90,7 @@
             &:hover,
             &:focus,
             &:active{
-                color: $success-states-color;
+                color: $success-states-color !important;
             }
         }
 
@@ -100,7 +100,7 @@
             &:hover,
             &:focus,
             &:active{
-                color: $default-states-color;
+                color: $default-states-color !important;
             }
         }
 
@@ -122,7 +122,7 @@
 
         &:hover,
         &:focus{
-            color: $primary-states-color;
+            color: $primary-states-color !important;
 
             &:not(.nav-link){
                 box-shadow: none;
@@ -178,14 +178,36 @@
     }
 }
 
+@mixin outline-buttons($btn-color, $btn-states-color) {
+  color: $btn-color;
+  border-color: $btn-color;
+
+  &:hover,
+  &:focus,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):active:focus,
+  &:not(:disabled):not(.disabled).active:focus,
+  &:active:hover,
+  &.active:hover,
+  .show > &.dropdown-toggle,
+  .show > &.dropdown-toggle:focus,
+  .show > &.dropdown-toggle:hover {
+      background-color: $transparent-bg;
+      color: $btn-states-color;
+      border-color: $btn-states-color;
+      box-shadow: none;
+  }
+}
+
 
 @mixin btn-size($padding-vertical, $padding-horizontal, $font-size, $border){
    font-size: $font-size;
    border-radius: $border;
    padding: $padding-vertical $padding-horizontal;
 
-   &.btn-simple{
-       padding: $padding-vertical - 1 $padding-horizontal - 1;
+   &[class*="btn-outline-"] {
+    padding: $padding-vertical - 1 $padding-horizontal - 1;
    }
 
 }
