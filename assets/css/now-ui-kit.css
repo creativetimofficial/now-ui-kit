@@ -6480,7 +6480,7 @@ img {
 @media screen and (max-width: 991px) {
   .sidebar-collapse .navbar-collapse {
     position: fixed;
-    display: block;
+    display: block !important;
     top: 0;
     height: 100% !important;
     width: 300px;
@@ -6885,7 +6885,7 @@ img {
   }
   .burger-menu .navbar-collapse {
     position: fixed;
-    display: block;
+    display: block !important;
     top: 0;
     height: 100% !important;
     width: 300px;
