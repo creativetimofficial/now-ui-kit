@@ -112,22 +112,6 @@ Navbar - Now UI Kit by Creative Tim
 <!-- CSS Just for demo purpose, don't include it in your project -->
 <link href="../../../assets/demo/demo.css" rel="stylesheet" />
 
-
-<!-- Visual Inspector Plugin -->
-<script type="text/javascript">
-  (function (g) {
-    var s = document.createElement('script'),
-    t = document.getElementsByTagName('script')[0];
-    s.async = true;
-    s.src = g + '?v=' + (new Date()).getTime();
-    s.charset = 'UTF-8';
-    s.setAttribute('crossorigin', '*');
-    t.parentNode.insertBefore(s, t);
-    })('https://www.canvasflip.com/plugins/vi/vi.min.js');
-</script>
-
-
-
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -187,6 +171,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="navbar-nav-scroll ml-md-auto ">
     <ul class="navbar-nav bd-navbar-nav flex-row">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.creative-tim.com/product/now-ui-kit-pro?ref=nuk-free-upgrade-pro" target="
+        "><i class="now-ui-icons arrows-1_cloud-upload-94"></i> Upgrade to PRO</a>
+      </li>
+      
+
         <li class="nav-item">
           <a class="nav-link active" href="https://github.com/creativetimofficial/now-ui-kit"><i class="now-ui-icons objects_diamond"></i> Give us a star</a>
         </li>
@@ -286,23 +277,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               
                   <a href="../../../docs/1.0/getting-started/file-structure.html">
                     File Structure
-                  </a>
-              
-
-              
-            </li>
-          
-        
-          
-          
-
-          
-
-          
-            <li class="">
-              
-                  <a href="../../../docs/1.0/getting-started/visual-inspector.html">
-                    Visual Inspector
                   </a>
               
 
@@ -879,9 +853,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <ul>
   <li>Navbars require a wrapping <code class="highlighter-rouge">.navbar</code> with <code class="highlighter-rouge">.navbar-expand{-sm|-md|-lg|-xl}</code> for responsive collapsing and <a href="#color-schemes">color scheme</a> classes.</li>
   <li>Navbars and their contents are fluid by default. Use <a href="#containers">optional containers</a> to limit their horizontal width.</li>
-  <li>Use our <a href="/docs/1.0/utilities/spacing/">spacing</a> and <a href="/docs/1.0/utilities/flex/">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
+  <li>Use our <a href="https://getbootstrap.com/docs/4.4/utilities/spacing/" target="_blank" rel="nofollow">spacing</a> and <a href="https://getbootstrap.com/docs/4.4/utilities/flex/" target="_blank" rel="nofollow">flex</a> utility classes for controlling spacing and alignment within navbars.</li>
   <li>Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.</li>
-  <li>Navbars are hidden by default when printing. Force them to be printed by adding <code class="highlighter-rouge">.d-print</code> to the <code class="highlighter-rouge">.navbar</code>. See the <a href="/docs/1.0/utilities/display/">display</a> utility class.</li>
+  <li>Navbars are hidden by default when printing. Force them to be printed by adding <code class="highlighter-rouge">.d-print</code> to the <code class="highlighter-rouge">.navbar</code>. See the <a href="https://getbootstrap.com/docs/4.4/utilities/display/" target="_blank" rel="nofollow">display</a> utility class.</li>
   <li>Ensure accessibility by using a <code class="highlighter-rouge">&lt;nav&gt;</code> element or, if using a more generic element such as a <code class="highlighter-rouge">&lt;div&gt;</code>, add a <code class="highlighter-rouge">role="navigation"</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
 </ul>
 
@@ -1019,7 +993,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav class="navbar navbar-expand-lg bg-primary">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="/presentation.html">Brand</a>
+            <a class="navbar-brand" href="javascript:void(0)">Brand</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
@@ -1055,7 +1029,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg bg-primary"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-translate"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"/presentation.html"</span><span class="nt">&gt;</span>Brand<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"javascript:void(0)"</span><span class="nt">&gt;</span>Brand<span class="nt">&lt;/a&gt;</span>
             <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
@@ -1402,7 +1376,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <p>Use our <a href="/docs/1.0/utilities/position/">position utilities</a> to place navbars in non-static positions. Choose from fixed to the top, fixed to the bottom, or stickied to the top (scrolls with the page until it reaches the top, then stays there). Fixed navbars use <code class="highlighter-rouge">position: fixed</code>, meaning they’re pulled from the normal flow of the DOM and may require custom CSS (e.g., <code class="highlighter-rouge">padding-top</code> on the <code class="highlighter-rouge">&lt;body&gt;</code>) to prevent overlap with other elements.</p>
 
-<p>Also note that <strong><code class="highlighter-rouge">.sticky-top</code> uses <code class="highlighter-rouge">position: sticky</code>, which <a href="https://caniuse.com/#feat=css-sticky">isn’t fully supported in every browser</a></strong>.</p>
+<p>Also note that <strong><code class="highlighter-rouge">.sticky-top</code> uses <code class="highlighter-rouge">position: sticky</code>, which <a href="https://caniuse.com/#feat=css-sticky" target="_blank" rel="nofollow">isn’t fully supported in every browser</a></strong>.</p>
 
 <div class="bd-example" data-example-id="">
 <nav class="navbar navbar-light bg-primary">

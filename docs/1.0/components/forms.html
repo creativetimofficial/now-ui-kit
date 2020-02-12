@@ -112,22 +112,6 @@ Forms - Now UI Kit by Creative Tim
 <!-- CSS Just for demo purpose, don't include it in your project -->
 <link href="../../../assets/demo/demo.css" rel="stylesheet" />
 
-
-<!-- Visual Inspector Plugin -->
-<script type="text/javascript">
-  (function (g) {
-    var s = document.createElement('script'),
-    t = document.getElementsByTagName('script')[0];
-    s.async = true;
-    s.src = g + '?v=' + (new Date()).getTime();
-    s.charset = 'UTF-8';
-    s.setAttribute('crossorigin', '*');
-    t.parentNode.insertBefore(s, t);
-    })('https://www.canvasflip.com/plugins/vi/vi.min.js');
-</script>
-
-
-
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -187,6 +171,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="navbar-nav-scroll ml-md-auto ">
     <ul class="navbar-nav bd-navbar-nav flex-row">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.creative-tim.com/product/now-ui-kit-pro?ref=nuk-free-upgrade-pro" target="
+        "><i class="now-ui-icons arrows-1_cloud-upload-94"></i> Upgrade to PRO</a>
+      </li>
+      
+
         <li class="nav-item">
           <a class="nav-link active" href="https://github.com/creativetimofficial/now-ui-kit"><i class="now-ui-icons objects_diamond"></i> Give us a star</a>
         </li>
@@ -286,23 +277,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               
                   <a href="../../../docs/1.0/getting-started/file-structure.html">
                     File Structure
-                  </a>
-              
-
-              
-            </li>
-          
-        
-          
-          
-
-          
-
-          
-            <li class="">
-              
-                  <a href="../../../docs/1.0/getting-started/visual-inspector.html">
-                    Visual Inspector
                   </a>
               
 
@@ -889,9 +863,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
           <h1 class="bd-title" id="content">Forms</h1>
           <p class="bd-lead">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
-          <h2 id="overview">Overview</h2>
+          
+<h2 id="overview">Overview</h2>
 
-<p>Bootstrap’s form controls expand on <a href="/docs/1.0/content/reboot/#forms">our Rebooted form styles</a> with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.</p>
+<p>Bootstrap’s form controls expand on <a href="https://getbootstrap.com/docs/4.4/content/reboot/" target="_blank" rel="nofollow">our Rebooted form styles</a> with classes. Use these classes to opt into their customized displays for a more consistent rendering across browsers and devices.</p>
 
 <p>Be sure to use an appropriate <code class="highlighter-rouge">type</code> attribute on all inputs (e.g., <code class="highlighter-rouge">email</code> for email address or <code class="highlighter-rouge">number</code> for numerical information) to take advantage of newer input controls like email verification, number selection, and more.</p>
 
@@ -1575,7 +1550,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="bd-callout bd-callout-warning">
 <h4 id="caveat-with-anchors">Caveat with anchors</h4>
 
-<p>By default, browsers will treat all native form controls (<code class="highlighter-rouge">&lt;input&gt;</code>, <code class="highlighter-rouge">&lt;select&gt;</code> and <code class="highlighter-rouge">&lt;button&gt;</code> elements) inside a <code class="highlighter-rouge">&lt;fieldset disabled&gt;</code> as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes <code class="highlighter-rouge">&lt;a ... class="btn btn-*"&gt;</code> elements, these will only be given a style of <code class="highlighter-rouge">pointer-events: none</code>. As noted in the section about <a href="/docs/1.0/components/buttons/#disabled-state">disabled state for buttons</a> (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn’t fully supported in Opera 18 and below, or in Internet Explorer 10, and won’t prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.</p>
+<p>By default, browsers will treat all native form controls (<code class="highlighter-rouge">&lt;input&gt;</code>, <code class="highlighter-rouge">&lt;select&gt;</code> and <code class="highlighter-rouge">&lt;button&gt;</code> elements) inside a <code class="highlighter-rouge">&lt;fieldset disabled&gt;</code> as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes <code class="highlighter-rouge">&lt;a ... class="btn btn-*"&gt;</code> elements, these will only be given a style of <code class="highlighter-rouge">pointer-events: none</code>. As noted in the section about <a href="../../../docs/1.0/components/buttons.html">disabled state for buttons</a> (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn’t fully supported in Opera 18 and below, or in Internet Explorer 10, and won’t prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.</p>
 </div>
 
 <div class="bd-callout bd-callout-danger">
