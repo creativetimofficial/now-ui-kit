@@ -1,0 +1,13 @@
+# The name of the project.
+name: now-ui-kit
+# The region where the project is deployed.
+region: us-east-1
+# The version of the Genezio YAML configuration to parse.
+yamlVersion: 2
+# Information about the frontend, including the path, language, and publish directory.
+# It is optional. It can also be an array if there are multiple frontends you want to deploy.
+frontend:
+  # The folder where the frontend scripts will run.
+  path: ./
+  # The directory that will be published to the CDN. It is relative to the path.
+  publish: ./
