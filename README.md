@@ -26,6 +26,7 @@ We wanted to fully display the power of this kit, so the kit comes packed with e
 
 * [Versions](#versions)
 * [Demo](#demo)
+* [Deploy](#deploy)
 * [Documentation](#documentation)
 * [File Structure](#file-structure)
 * [Browser Support](#browser-support)
@@ -49,6 +50,12 @@ We wanted to fully display the power of this kit, so the kit comes packed with e
 | Register | Login | Profile |
 | --- | --- | ---  |
 | [![Landing](https://github.com/creativetimofficial/public-assets/blob/master/now-ui-kit/nuk-landing-page.png?raw=true)](https://demos.creative-tim.com/now-ui-kit/examples/landing-page.html?ref=adnp-readme)  | [![Login](https://github.com/creativetimofficial/public-assets/blob/master/now-ui-kit/nuk-login-page.png?raw=true)](https://demos.creative-tim.com/now-ui-kit/examples/login-page.html?ref=adnp-readme)  | [![Profile](https://github.com/creativetimofficial/public-assets/blob/master/now-ui-kit/nuk-profile-page.png?raw=true)](https://demos.creative-tim.com/now-ui-kit/examples/profile-page.html?ref=adnp-readme)
+
+## Deploy
+
+:rocket: You can deploy your own version of the template to Genezio with one click:
+
+[![Deploy to Genezio](https://raw.githubusercontent.com/Genez-io/graphics/main/svg/deploy-button.svg)](https://app.genez.io/start/deploy?repository=https://github.com/creativetimofficial/now-ui-kit&utm_source=github&utm_medium=referral&utm_campaign=github-creativetim&utm_term=deploy-project&utm_content=button-head)
 
 ## Documentation
 The documentation for the Now UI Kit is hosted at our [website](https://demos.creative-tim.com/now-ui-kit/docs/1.0/getting-started/introduction.html?ref=adn-readme).
